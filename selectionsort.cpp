@@ -11,7 +11,8 @@ void swap(int &a, int &b) {
 int main() {
     int arr[] = {7, 6, 5, 4, 3, 2, 1, 0};
     int n = sizeof(arr) / sizeof(arr[0]);
-    
+
+    // Logic
     for (int i = 0; i < n - 1; i++) {
         int minidx = i;
         for (int j = i + 1; j < n; j++) {
@@ -20,7 +21,8 @@ int main() {
             swap(arr[minidx], arr[i]);
         }
     }
-    
+
+    // Displaying the array
     for (int i  = 0; i < n; i++)
         cout << arr[i] << " ";
     cout << endl;
